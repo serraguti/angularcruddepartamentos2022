@@ -8,6 +8,8 @@ export class DepartamentosService {
     constructor(private _http: HttpClient){}
 
     getDepartamentos(): Observable<any>{
-        
+        var request = "/api/departamentos";
+        var url = environment.urlApiDepartamentos + request;
+        return this._http.get(url);
     }
 }

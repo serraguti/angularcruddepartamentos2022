@@ -7,19 +7,21 @@ import { DepartamentosComponent } from './components/departamentos/departamentos
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {routing, appRoutingProviders} from './app.routing';
-
+import { DepartamentosService } from './services/departamentos.service';
+import { InsertardepartamentoComponent } from './components/insertardepartamento/insertardepartamento.component';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    DepartamentosComponent
+    DepartamentosComponent,
+    InsertardepartamentoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule, routing
   ],
-  providers: [appRoutingProviders],
+  providers: [appRoutingProviders, DepartamentosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
