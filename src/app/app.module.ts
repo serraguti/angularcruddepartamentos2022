@@ -9,12 +9,14 @@ import {HttpClientModule} from '@angular/common/http';
 import {routing, appRoutingProviders} from './app.routing';
 import { DepartamentosService } from './services/departamentos.service';
 import { InsertardepartamentoComponent } from './components/insertardepartamento/insertardepartamento.component';
+import { EditdepartamentoComponent } from './components/editdepartamento/editdepartamento.component';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     DepartamentosComponent,
-    InsertardepartamentoComponent
+    InsertardepartamentoComponent,
+    EditdepartamentoComponent
   ],
   imports: [
     BrowserModule,
